@@ -7,14 +7,14 @@ import BackgroundImage from '../../assets/images/bg.png'
 export default function LandingPage() {
     return (
         <header style={ HeaderStyle }>
-            <h1 className="main-title text-center">login / register page</h1>
-            <p className="main-para text-center">join us now and don't waste time</p>
+            <h1 className="main-title text-center">User Registraton</h1>
+            {/*<p className="main-para text-center">join us now and don't waste time</p>*/}
             <div className="buttons text-center">
-                <Link to="/login">
-                    <button className="primary-button">log in</button>
-                </Link>
+                {/*<Link to="/login">*/}
+                {/*    <button className="primary-button">log in</button>*/}
+                {/*</Link>*/}
                 <Link to="/register">
-                    <button className="primary-button" id="reg_btn"><span>register </span></button>
+                    <button className="primary-button" id="reg_btn"><span>Register</span></button>
                 </Link>
             </div>
         </header>

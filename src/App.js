@@ -14,11 +14,11 @@ export default function App() {
         <Router>
             <div>
                 <Switch>
-                    <Route exact path="/" component={ LandingPage } />
-                    <Route path="/login" component={ LoginPage } />
+                    <Route exact path="/" component={ RegisterPage } />
+                    {/*<Route path="/login" component={ LoginPage } />*/}
                     <Route path="/register" component={ RegisterPage } />
-                    <Route path="/forget-password" component={ ForgetPasswordPage } />
-                    <Route path="/home" component={ HomePage } />
+                    {/*<Route path="/forget-password" component={ ForgetPasswordPage } />*/}
+                    {/*<Route path="/home" component={ HomePage } />*/}
                 </Switch>
                 <Footer />
             </div>
@@ -28,7 +28,7 @@ export default function App() {
 
 const Footer = () => {
     return (
-        <p className="text-center" style={ FooterStyle }>Designed & coded by <a href="https://izemspot.netlify.com" target="_blank" rel="noopener noreferrer">IZEMSPOT</a></p>
+        <p className="text-center" style={ FooterStyle }><a href="https://www.cerc.io/" target="_blank" rel="noopener noreferrer">cerc.io</a></p>
     )
 }
 
