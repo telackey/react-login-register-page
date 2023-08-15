@@ -14,9 +14,9 @@ export default function App() {
         <Router>
             <div>
                 <Switch>
-                    <Route exact path="/" component={ RegisterPage } />
+                    <Route exact path="/newuser/" component={ RegisterPage } />
                     {/*<Route path="/login" component={ LoginPage } />*/}
-                    <Route path="/register" component={ RegisterPage } />
+                    <Route path="/newuser/register" component={ RegisterPage } />
                     {/*<Route path="/forget-password" component={ ForgetPasswordPage } />*/}
                     {/*<Route path="/home" component={ HomePage } />*/}
                 </Switch>

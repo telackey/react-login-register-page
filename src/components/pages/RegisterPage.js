@@ -13,6 +13,9 @@ export default function SignUpPage() {
         try {
             let res = await fetch("/register", {
                 method: "POST",
+	        headers: {
+	          "Content-Type": "application/json",
+	        },
                 body: JSON.stringify({
                     username: username,
                     email: email,
@@ -20,7 +23,7 @@ export default function SignUpPage() {
             });
             let resJson = await res.json();
             if (res.status === 200) {
-                setMessage("User created successfully");
+                setMessage(`API Key: ${resJson['api-key']}`);
             } else {
                 setMessage("Some error occured");
             }
@@ -32,7 +35,7 @@ export default function SignUpPage() {
 
     return (
         <div className="text-center m-5-auto">
-            <h2>Join us</h2>
+	    {/*<h2>Join us</h2>*/}
             {/*<h5>Create your personal account</h5>*/}
             <form onSubmit={handleSubmit} action="">
                 <p>

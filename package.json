@@ -1,6 +1,7 @@
 {
   "name": "react-login-page",
   "version": "0.1.0",
+  "homepage": "/newuser/",
   "private": true,
   "dependencies": {
     "react": "^16.8.6",
