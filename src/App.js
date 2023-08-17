@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import LandingPage from './components/pages/LandingPage'
 import LoginPage from './components/pages/LoginPage'
@@ -14,10 +14,10 @@ export default function App() {
     return (
         <Router>
             <div>
-                <Switch>
-                    <Route exact path={basePath} component={ RegisterPage } />
-                    <Route path={basePath + "/register"} component={ RegisterPage } />
-                </Switch>
+                <Routes>
+                    <Route exact path={basePath} element={ <RegisterPage/> } />
+                    <Route path={basePath + "/create"} element={ <RegisterPage/> } />
+                </Routes>
                 <Footer />
             </div>
         </Router>

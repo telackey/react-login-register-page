@@ -80,7 +80,7 @@ form {
     background: #f3f3f3;
     border: 1px solid #ddd;
     border-radius: 2px;
-    padding: 2rem;
+    padding: 1rem;
     margin: 2rem 0 1rem 0
 }
 
@@ -88,7 +88,7 @@ form label {
     float: left;
     font-size: .9rem;
     margin: 0;
-    padding: 0
+    padding: 0.5rem;
 }
 
 .right-label {
@@ -126,7 +126,8 @@ footer p {
 
 /***    Register Page     ***/
 #checkbox {
-    width: 1rem
+    width: 1rem;
+    padding: .5rem;
 }
 
 form span {
@@ -140,4 +141,24 @@ form span {
 /***    Home Page     ***/
 .home-page-title {
     color: #222
+}
+
+.error {
+    color: red;
+}
+
+.message {
+    display: inline-block;
+    background: #f3f3f3;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 2rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.note {
+    color: #888;
+    font-size: .8rem;
+    margin: 1rem 0 0.5rem 0;
+    font-style: italic;
 }
