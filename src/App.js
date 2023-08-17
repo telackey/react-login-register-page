@@ -10,15 +10,13 @@ import HomePage from './components/pages/HomePage'
 import './App.css'
 
 export default function App() {
+    const basePath = "LACONIC_HOSTED_CONFIG_web_path"
     return (
         <Router>
             <div>
                 <Switch>
-                    <Route exact path="/newuser/" component={ RegisterPage } />
-                    {/*<Route path="/login" component={ LoginPage } />*/}
-                    <Route path="/newuser/register" component={ RegisterPage } />
-                    {/*<Route path="/forget-password" component={ ForgetPasswordPage } />*/}
-                    {/*<Route path="/home" component={ HomePage } />*/}
+                    <Route exact path={basePath} component={ RegisterPage } />
+                    <Route path={basePath + "/register"} component={ RegisterPage } />
                 </Switch>
                 <Footer />
             </div>

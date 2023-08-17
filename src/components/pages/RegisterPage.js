@@ -9,9 +9,10 @@ export default function SignUpPage() {
     const [message, setMessage] = useState("");
 
     let handleSubmit = async (e) => {
+        const apiBase = "LACONIC_HOSTED_CONFIG_api_url";
         e.preventDefault();
         try {
-            let res = await fetch("/register", {
+            let res = await fetch(`${apiBase}/register`, {
                 method: "POST",
 	        headers: {
 	          "Content-Type": "application/json",
@@ -38,12 +39,12 @@ export default function SignUpPage() {
 	    {/*<h2>Join us</h2>*/}
             {/*<h5>Create your personal account</h5>*/}
             <form onSubmit={handleSubmit} action="">
-                <p>
-                    <label>Username</label><br/>
-                    <input type="text" name="username"
-                           onChange={(e) => setUsername(e.target.value)}
-                           required />
-                </p>
+                {/*<p>*/}
+                {/*    <label>Username</label><br/>*/}
+                {/*    <input type="text" name="username"*/}
+                {/*           onChange={(e) => setUsername(e.target.value)}*/}
+                {/*           required />*/}
+                {/*</p>*/}
                 <p>
                     <label>Email address</label><br/>
                     <input type="email" name="email"

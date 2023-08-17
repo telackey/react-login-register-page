@@ -1,8 +1,8 @@
 {
   "name": "react-login-page",
   "version": "0.1.0",
-  "homepage": "/newuser/",
   "private": true,
+  "homepage": "LACONIC_HOSTED_CONFIG_web_path",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -11,7 +11,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "clean": "rm -rf build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
